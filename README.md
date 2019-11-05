@@ -1,6 +1,9 @@
 ## Description
 Application developed with Spring MVC 5 and Spring Boot 2 using TDD in the development process.
 
+## Class Diagram
+![class-diagram-1](https://github.com/karlscode/Money-API-Rest/blob/master/src/main/resources/class%20diagram/class_diagram_project_algamoney.png)
+
 ## Tests
    + Unit testing
    + Integration test
