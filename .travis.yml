@@ -17,8 +17,9 @@ addons:
 
 script:
   # other script steps might be done before running the actual analysis.
-  - sonar-scanner
-  - mvn test -B
+#  - sonar-scanner
+#  - mvn test -B
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 
 cache:
   directories:
