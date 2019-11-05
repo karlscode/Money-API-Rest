@@ -13,7 +13,7 @@ addons:
     organization: "karlscode-github"
     token:
       # encrypted value of your token
-      secure: $SONAR_TOKEN_
+      secure: $SONAR_TOKEN
 
 script:
   # other script steps might be done before running the actual analysis.
