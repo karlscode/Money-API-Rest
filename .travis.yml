@@ -1,0 +1,28 @@
+language: java
+
+sudo: required
+
+dist: trusty
+
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  - mvn cobertura:cobertura
+
+addons:
+  sonarcloud:
+    organization: "karlscode-github"
+    token:
+      # encrypted value of your token
+      secure: $SONAR_TOKEN
+
+script:
+  # other script steps might be done before running the actual analysis.
+  - sonar-scanner
+  - mvn test -B
+
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
+
+notifications:
+  email: false
