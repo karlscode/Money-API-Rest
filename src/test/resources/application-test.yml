@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    database: hsql
+    show-sql: true
+    hibernate:
+      dll-auto: none
+
+  datasource:
+    driver-class-name: org.hsql.jdbcDriver
+    url: jdbc:hsqldb:mem:.
+    username: sa
+    password:
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration/hsql/

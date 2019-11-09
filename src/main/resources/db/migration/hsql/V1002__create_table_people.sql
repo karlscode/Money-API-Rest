@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS people (
-    id BIGINT(20) NOT NULL,
+    id BIGINT NOT NULL,
     name VARCHAR(50) NOT NULL,
     active BOOLEAN NOT NULL,
     street VARCHAR(30),
@@ -9,4 +9,4 @@ CREATE TABLE IF NOT EXISTS people (
     zipcode VARCHAR(8),
     city VARCHAR(30),
     state CHAR(2)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ;
