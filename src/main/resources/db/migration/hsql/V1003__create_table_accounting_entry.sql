@@ -5,7 +5,7 @@ CREATE TABLE accounting_entry (
     payday DATE,
     amount DECIMAL(10,2) NOT NULL,
     note VARCHAR(100),
-    type CHAR(7) NOT NULL ,
+    type CHAR(7) NOT NULL,
     id_category BIGINT,
     id_people BIGINT
 ) ;
