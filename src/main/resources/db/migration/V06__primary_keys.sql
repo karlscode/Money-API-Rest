@@ -9,3 +9,11 @@ ALTER TABLE people
 ALTER TABLE accounting_entry
     ADD CONSTRAINT Pk_accounting_entry
     PRIMARY KEY (id);
+
+ALTER TABLE user
+    ADD CONSTRAINT Pk_user
+        PRIMARY KEY (id);
+
+ALTER TABLE permission
+    ADD CONSTRAINT Pk_permission
+        PRIMARY KEY (id);

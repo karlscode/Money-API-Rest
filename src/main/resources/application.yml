@@ -1,9 +1,15 @@
-#spring:
-#  jpa:
-#    database: mysql
-#    show-sql: true
-#
-#  datasource:
-#    url: jdbc:mysql://localhost/algamoneyapirest?createDatabaseIfNotExist=true&useSSL=false
-#    username: root
-#    password:
+spring:
+  jpa:
+    database: mysql
+    show-sql: true
+
+  datasource:
+    url: jdbc:mysql://localhost/algamoneyapirest?createDatabaseIfNotExist=true&useSSL=false
+    username: root
+    password:
+
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true # Requires parameters to be validated durin a request.
+
+    date-format: yyyy-MM-dd # Date format JSON

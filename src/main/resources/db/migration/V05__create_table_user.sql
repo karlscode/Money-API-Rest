@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS user (
+    id BIGINT(20),
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    id_permission BIGINT(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
